@@ -75,6 +75,14 @@ button:hover {
   transition: width 0.4s ease;
 }
 
+.reset {
+  background: #ff6b6b;
+  color: rgb(76, 41, 231);
+}
+
+.reset:hover {
+  background: #ff4d4d;
+}
 
 
 
