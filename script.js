@@ -15,3 +15,12 @@ function setGoal() {
 
   updateUI();
 }
+
+function addWater(amount) {
+  intake += amount;
+
+  if (intake > goal) intake = goal;
+
+  localStorage.setItem("intake", intake);
+  updateUI();
+}
