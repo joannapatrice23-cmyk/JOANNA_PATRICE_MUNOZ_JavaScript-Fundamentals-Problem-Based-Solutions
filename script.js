@@ -41,3 +41,5 @@ function resetTracker() {
   const intakeL = (intake / 1000).toFixed(2);
   const goalL = (goal / 1000).toFixed(2);
   const remainingL = ((goal - intake) / 1000).toFixed(2);
+
+   document.getElementById("progressBar").style.width = percent + "%";
