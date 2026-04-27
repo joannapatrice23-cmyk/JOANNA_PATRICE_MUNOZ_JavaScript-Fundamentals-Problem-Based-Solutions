@@ -24,3 +24,13 @@ function addWater(amount) {
   localStorage.setItem("intake", intake);
   updateUI();
 }
+
+function resetTracker() {
+  const confirmReset = confirm("Reset your water intake for today?");
+  
+  if (confirmReset) {
+    intake = 0;
+    localStorage.setItem("intake", intake);
+    updateUI();
+  }
+}
