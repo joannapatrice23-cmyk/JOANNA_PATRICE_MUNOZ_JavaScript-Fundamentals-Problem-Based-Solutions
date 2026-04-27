@@ -35,6 +35,7 @@ function resetTracker() {
   }
 }
 
+function updateUI() {
   const percent = Math.min((intake / goal) * 100, 100);
 
   // Convert to liters for display
