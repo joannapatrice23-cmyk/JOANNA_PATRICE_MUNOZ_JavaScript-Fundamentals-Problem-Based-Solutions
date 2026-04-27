@@ -43,3 +43,12 @@ function resetTracker() {
   const remainingL = ((goal - intake) / 1000).toFixed(2);
 
    document.getElementById("progressBar").style.width = percent + "%";
+
+     if (percent === 100) {
+    document.getElementById("status").innerText =
+      `🎉 Goal reached! ${goalL}L completed`;
+  } else {
+    document.getElementById("status").innerText =
+      `${intakeL}L / ${goalL}L • ${remainingL}L left`;
+  }
+}
