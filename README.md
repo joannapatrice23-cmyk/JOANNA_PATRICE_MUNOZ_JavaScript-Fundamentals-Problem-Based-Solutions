@@ -1,2 +1,2 @@
 # JOANNA_PATRICE_MUNOZ_JavaScript-Fundamentals-Problem-Based-Solutions
- real-world problems and build presentation-ready Proofs of Concept
+  Silent Thirst Tracker helps you build better hydration habits with quick tap logging, visual progress tracking, and smart reminders—perfect for busy days.
