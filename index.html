@@ -11,7 +11,31 @@
 
 </head>
 <body>
-  <div class="app">
+
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+  <div class="container-fluid">
+
+    <!-- Brand stays left -->
+    <span class="navbar-brand">💧 Silent Thirst</span>
+
+    <!-- Center buttons -->
+    <div class="position-absolute start-50 translate-middle-x d-flex gap-5">
+      <button class="btn btn-light btn-sm btn-outline-dark" onclick="showView('mainView')">Home</button>
+      <button class="btn btn-light btn-sm btn-outline-dark" onclick="showView('settingsView')">Settings</button>
+      <button class="btn btn-light btn- sm btn-outline-dark" onclick="showView('historyView')">History</button>
+      <button class="btn btn-warning btn-sm btn-outline-dark" onclick="showView('authView')">Sign In</button>
+    </div>
+
+  </div>
+</nav>
+
+<div class="container mt-4">
+
+  <!-- 🔹 MAIN VIEW -->
+  <div id="mainView" class="view">
+
+    <div class="app text-center">
     <h1>💧 Silent Thirst Tracker</h1>
     <p class="subtitle">Stay focused. Stay hydrated.</p>
 
