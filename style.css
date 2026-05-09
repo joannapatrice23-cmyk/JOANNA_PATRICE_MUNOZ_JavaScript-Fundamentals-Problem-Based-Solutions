@@ -87,6 +87,84 @@ input {
   border: 1px solid #ccc;
 }
 
+/* =========================
+   CARDS
+========================= */
+.card,
+.girl-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.25s ease;
+}
+
+.card:hover,
+.girl-card:hover {
+  transform: translateY(-3px);
+}
+
+.progress-card {
+  background: linear-gradient(135deg, #ffffff, #f0f9ff);
+}
+
+/* =========================
+   INPUT
+========================= */
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* =========================
+   CIRCULAR PROGRESS RING
+========================= */
+.circle-wrap {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 15px auto;
+}
+
+.circle {
+  transform: rotate(-90deg);
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #e5e7eb;
+  stroke-width: 12;
+}
+
+.circle-progress {
+  fill: none;
+  stroke: #42a5f5;
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-dasharray: 377; /* 2πr where r = 60 */
+  stroke-dashoffset: 377;
+  transition: stroke-dashoffset 0.6s ease, stroke 0.4s ease;
+}
+
+.circle-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#progressPercent {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0d47a1;
+}
+
+
 .card {
   background: rgb(255, 255, 255);
   padding: 15px;
