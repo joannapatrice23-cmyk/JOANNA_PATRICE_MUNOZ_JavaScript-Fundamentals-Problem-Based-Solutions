@@ -64,11 +64,28 @@
       <button class="btn btn-info w-100 mb-2" onclick="addWater(750)">🥤+750 ml</button>
       <button class="btn btn-danger w-100" onclick="resetTracker()">Reset</button>
     </div>
+     
+    <div class="col-lg-4">
 
-     <div class="card progress-card">
-      <div class="progress-container">
-        <div id="progressBar"></div>
-      </div>
+      <div class="card p-3 text-center progress-card">
+        <h5>📊 Daily Hydration Progress</h5>
+
+         <div class="circle-wrap">
+            <svg class="circle" width="140" height="140">
+              <circle class="circle-bg" cx="70" cy="70" r="60"></circle>
+              <circle class="circle-progress" cx="70" cy="70" r="60"></circle>
+            </svg>
+
+            <div class="circle-text">
+              <span id="progressPercent">0%</span>
+            </div>
+          </div>
+
+          <div class="progress-info">
+            <span id="currentIntake">0L</span>
+            <span id="goalAmount">Goal</span>
+          </div>
+
       <p id="status"></p>
     </div>
 
