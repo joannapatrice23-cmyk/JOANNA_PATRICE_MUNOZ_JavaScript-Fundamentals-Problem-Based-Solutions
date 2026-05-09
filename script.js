@@ -4,7 +4,11 @@ let reminderTimer = null;
 
 let history = JSON.parse(localStorage.getItem("history")) || [];
 
+document.addEventListener("DOMContentLoaded", () => {
 updateUI();
+renderHistory();
+  updateUser();
+});
 
 function setGoal() {
   const input = document.getElementById("goalInput").value;
