@@ -46,9 +46,7 @@ function addWater(amount) {
 }
 
 function resetTracker() {
-  const confirmReset = confirm("Reset your water intake for today?");
-  
-  if (confirmReset) {
+ if (confirm("Reset your water intake for today?")) {
     intake = 0;
     localStorage.setItem("intake", intake);
     updateUI();
