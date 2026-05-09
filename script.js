@@ -88,6 +88,17 @@ function updateUI() {
   if (currentIntake) currentIntake.innerText = intakeL + "L";
   if (goalAmount) goalAmount.innerText = goalL + "L Goal";
 
+    const status = document.getElementById("status");
+  if (status) {
+    status.innerText =
+      percent === 100
+        ? `🎉 Goal reached! ${goalL}L completed`
+        : `${intakeL}L / ${goalL}L • ${remainingL}L left`;
+  }
+
+
+
+
 
 
 
