@@ -138,6 +138,61 @@ function clearHistory() {
   }
 }
 
+// REMINDER
+// =========================
+function startReminder() {
+  const minutes = Number(document.getElementById("reminderInterval")?.value);
+  if (!minutes || minutes <= 0) return;
+
+  localStorage.setItem("reminderInterval", minutes);
+
+  if (Notification.permission !== "granted") {
+    Notification.requestPermission();
+  }
+
+  clearInterval(reminderTimer);
+
+  reminderTimer = setInterval(() => {
+    const hour = new Date().getHours();
+    if (hour < 8 || hour > 18) return;
+
+    const expected = (goal / 10) * (hour - 8);
+
+    if (intake < expected) {
+      new Notification("💧 Time to hydrate!");
+    }
+  }, minutes * 60000);
+
+  alert("Reminder started!");
+}
+
+function stopReminder() {
+  clearInterval(reminderTimer);
+  reminderTimer = null;
+  alert("Reminder stopped!");
+}
+
+// =========================
+// LOGIN
+// =========================
+function login() {
+  const username = document.getElementById("usernameInput")?.value;
+  if (!username) return;
+
+  localStorage.setItem("user", username);
+  updateUser();
+}
+
+function updateUser() {
+  const user = localStorage.getItem("user");
+  const greeting = document.getElementById("userGreeting");
+
+  if (greeting) {
+    greeting.innerText = user ? `Welcome, ${user} 👋` : "";
+  }
+}
+
+
 
 
 
