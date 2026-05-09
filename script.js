@@ -63,6 +63,21 @@ function updateUI() {
 
    const circle = document.querySelector(".circle-progress");
 
+     if (circle) {
+    const r = 60;
+    const circumference = 2 * Math.PI * r;
+    const offset = circumference - (percent / 100) * circumference;
+
+    circle.style.strokeDasharray = circumference;
+    circle.style.strokeDashoffset = offset;
+
+    circle.style.stroke =
+      percent < 40 ? "#ef5350" :
+      percent < 80 ? "#ffa726" :
+      "#42a5f5";
+  }
+
+
 
    document.getElementById("progressBar").style.width = percent + "%";
 
