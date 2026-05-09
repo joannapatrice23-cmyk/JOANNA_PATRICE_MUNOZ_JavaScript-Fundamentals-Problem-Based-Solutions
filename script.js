@@ -192,22 +192,29 @@ function updateUser() {
   }
 }
 
+// VIEW SWITCH (FIXED)
+// =========================
+function showView(viewId, btn) {
 
+  document.querySelectorAll(".view").forEach(v =>
+    v.classList.add("d-none")
+  );
 
+  const view = document.getElementById(viewId);
+  if (view) view.classList.remove("d-none");
 
+  document.querySelectorAll(".nav-pill").forEach(b =>
+    b.classList.remove("active")
+  );
 
-
-
-
-
-
-   document.getElementById("progressBar").style.width = percent + "%";
-
-     if (percent === 100) {
-    document.getElementById("status").innerText =
-      `🎉 Goal reached! ${goalL}L completed`;
-  } else {
-    document.getElementById("status").innerText =
-      `${intakeL}L / ${goalL}L • ${remainingL}L left`;
-  }
+  if (btn) btn.classList.add("active");
 }
+
+
+
+
+
+
+
+
+
