@@ -32,6 +32,14 @@ function addWater(amount) {
   if (intake > goal) intake = goal;
 
   localStorage.setItem("intake", intake);
+
+  
+  history.push({
+    amount,
+    time: new Date().toLocaleTimeString()
+  });
+
+  localStorage.setItem("history", JSON.stringify(history));
   updateUI();
 }
 
