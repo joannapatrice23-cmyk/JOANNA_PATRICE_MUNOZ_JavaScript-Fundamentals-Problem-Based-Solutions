@@ -82,6 +82,12 @@ function updateUI() {
     progressPercent.innerText = Math.round(percent) + "%";
   }
 
+  const currentIntake = document.getElementById("currentIntake");
+  const goalAmount = document.getElementById("goalAmount");
+
+  if (currentIntake) currentIntake.innerText = intakeL + "L";
+  if (goalAmount) goalAmount.innerText = goalL + "L Goal";
+
 
 
 
