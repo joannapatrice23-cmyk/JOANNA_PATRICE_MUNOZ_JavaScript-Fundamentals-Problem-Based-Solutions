@@ -11,7 +11,10 @@ renderHistory();
 });
 
 function setGoal() {
-  const input = document.getElementById("goalInput").value;
+  const input =
+   document.getElementById("goalInput")?.value||
+  document.getElementById("goalInputSettings")?.value;
+
   if (!input || input <= 0) return;
 
   goal = Number(input) * 1000; // convert L → ml
