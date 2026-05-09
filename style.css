@@ -2,13 +2,9 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #dbeafe, #e0f7fa);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 80px;
 }
-
 .app {
   width: 350px;
   text-align: center;
