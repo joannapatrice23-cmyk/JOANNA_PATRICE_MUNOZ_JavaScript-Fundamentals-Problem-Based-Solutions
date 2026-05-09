@@ -61,6 +61,9 @@ function updateUI() {
   const goalL = (goal / 1000).toFixed(2);
   const remainingL = ((goal - intake) / 1000).toFixed(2);
 
+   const circle = document.querySelector(".circle-progress");
+
+
    document.getElementById("progressBar").style.width = percent + "%";
 
      if (percent === 100) {
