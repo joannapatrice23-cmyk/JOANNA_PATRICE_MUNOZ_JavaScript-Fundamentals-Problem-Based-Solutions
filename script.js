@@ -77,6 +77,12 @@ function updateUI() {
       "#42a5f5";
   }
 
+   const progressPercent = document.getElementById("progressPercent");
+  if (progressPercent) {
+    progressPercent.innerText = Math.round(percent) + "%";
+  }
+
+
 
 
    document.getElementById("progressBar").style.width = percent + "%";
