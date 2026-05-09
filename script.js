@@ -96,6 +96,15 @@ function updateUI() {
         : `${intakeL}L / ${goalL}L • ${remainingL}L left`;
   }
 
+    const bodyWater = document.getElementById("bodyWater");
+  const bodyPercent = document.getElementById("bodyPercent");
+
+  if (bodyWater) bodyWater.style.height = percent + "%";
+  if (bodyPercent) bodyPercent.innerText = Math.round(percent) + "%";
+}
+
+
+
 
 
 
