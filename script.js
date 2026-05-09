@@ -130,6 +130,14 @@ function deleteEntry(index) {
   renderHistory();
 }
 
+function clearHistory() {
+  if (confirm("Clear hydration history?")) {
+    history = [];
+    localStorage.setItem("history", JSON.stringify(history));
+    renderHistory();
+  }
+}
+
 
 
 
