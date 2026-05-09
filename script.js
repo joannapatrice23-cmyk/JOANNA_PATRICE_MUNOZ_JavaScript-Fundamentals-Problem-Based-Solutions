@@ -103,6 +103,27 @@ function updateUI() {
   if (bodyPercent) bodyPercent.innerText = Math.round(percent) + "%";
 }
 
+// =========================
+// HISTORY
+// =========================
+function renderHistory() {
+  const list = document.getElementById("historyList");
+  if (!list) return;
+
+  list.innerHTML = "";
+
+  history.forEach((entry, index) => {
+    const li = document.createElement("li");
+
+    li.innerHTML = `
+      <span>${entry.amount}ml - ${entry.time}</span>
+      <button onclick="deleteEntry(${index})">✖</button>
+    `;
+
+    list.appendChild(li);
+  });
+}
+
 
 
 
