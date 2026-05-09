@@ -56,6 +56,17 @@ h1 {
   color: black;
 }
 
+.card,
+.girl-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.25s ease;
+}
+
 
 .card {
   background: rgb(255, 255, 255);
