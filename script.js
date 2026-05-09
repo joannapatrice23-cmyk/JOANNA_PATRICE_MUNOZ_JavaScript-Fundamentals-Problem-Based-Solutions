@@ -40,7 +40,9 @@ function addWater(amount) {
   });
 
   localStorage.setItem("history", JSON.stringify(history));
+  
   updateUI();
+  renderHistory();
 }
 
 function resetTracker() {
