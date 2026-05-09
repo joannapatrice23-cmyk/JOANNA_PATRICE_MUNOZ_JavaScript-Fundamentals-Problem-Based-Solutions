@@ -164,6 +164,15 @@ input {
   color: #0d47a1;
 }
 
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 
 .card {
   background: rgb(255, 255, 255);
