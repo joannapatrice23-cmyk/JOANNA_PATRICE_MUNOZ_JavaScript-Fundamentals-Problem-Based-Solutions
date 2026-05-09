@@ -7,11 +7,13 @@ body {
 }
 .app {
   width: 350px;
+  margin: auto;
   text-align: center;
 }
 
 h1 {
   margin-bottom: 5px;
+  font-weight: 600;
 }
 
 .subtitle {
