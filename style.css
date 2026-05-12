@@ -177,6 +177,15 @@ input {
   color: #0d6efd;
 }
 
+#goalAmount {
+  color: #555;
+}
+
+#status {
+  font-weight: 500;
+  color: #0d47a1;
+}
+
 
 .card {
   background: rgb(255, 255, 255);
