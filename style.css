@@ -173,6 +173,10 @@ input {
   margin-bottom: 10px;
 }
 
+#currentIntake {
+  color: #0d6efd;
+}
+
 
 .card {
   background: rgb(255, 255, 255);
