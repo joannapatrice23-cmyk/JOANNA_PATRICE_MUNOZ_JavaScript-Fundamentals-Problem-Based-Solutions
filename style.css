@@ -186,6 +186,34 @@ input {
   color: #0d47a1;
 }
 
+/* =========================
+   HUMAN BODY HYDRATION TRACKER
+========================= */
+.body-container {
+  position: relative;
+  width: 220px;
+  height: 420px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bodyWater {
+  position: absolute;
+  bottom: 20px;
+  width: 160px;
+  height: 0%;
+  background: linear-gradient(
+    to top,
+    rgba(33, 150, 243, 0.95),
+    rgba(129, 212, 250, 0.75)
+  );
+  transition: height 0.8s ease;
+  z-index: 1;
+  border-radius: 0 0 30px 30px;
+}
+
 
 .card {
   background: rgb(255, 255, 255);
