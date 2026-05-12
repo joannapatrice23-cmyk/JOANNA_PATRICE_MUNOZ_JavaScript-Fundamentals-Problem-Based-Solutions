@@ -285,6 +285,30 @@ input {
   }
 }
 
+#historyList {
+  list-style: none;
+  padding: 0;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+#historyList li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#historyList button {
+  border: none;
+  border-radius: 8px;
+  padding: 5px 8px;
+  background: #ff6b6b;
+  color: white;
+}
+
+
 .card {
   background: rgb(255, 255, 255);
   padding: 15px;
