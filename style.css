@@ -308,6 +308,10 @@ input {
   color: white;
 }
 
+.view {
+  margin-top: 20px;
+}
+
 
 .card {
   background: rgb(255, 255, 255);
