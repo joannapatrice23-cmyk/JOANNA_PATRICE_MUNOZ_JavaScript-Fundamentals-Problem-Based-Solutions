@@ -90,35 +90,7 @@ input {
 /* =========================
    CARDS
 ========================= */
-.card,
-.girl-card {
-  background: white;
-  padding: 20px;
-  border-radius: 20px;
-  margin-bottom: 15px;
-  border: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: 0.25s ease;
-}
 
-.card:hover,
-.girl-card:hover {
-  transform: translateY(-3px);
-}
-
-.progress-card {
-  background: linear-gradient(135deg, #ffffff, #f0f9ff);
-}
-
-/* =========================
-   INPUT
-========================= */
-input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-}
 
 /* =========================
    CIRCULAR PROGRESS RING
