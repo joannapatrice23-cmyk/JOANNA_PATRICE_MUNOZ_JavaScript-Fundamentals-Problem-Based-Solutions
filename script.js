@@ -7,7 +7,7 @@ let history = JSON.parse(localStorage.getItem("history")) || [];
 document.addEventListener("DOMContentLoaded", () => {
 updateUI();
 renderHistory();
-  updateUser();
+updateUser();
 });
 
 function setGoal() {

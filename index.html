@@ -15,7 +15,7 @@
 <body>
 
   
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
   <div class="container-fluid">
 
     
@@ -23,6 +23,7 @@
 
     <!-- Center buttons -->
     <div class="position-absolute start-50 translate-middle-x d-flex gap-5">
+
      <button class="nav-pill active" onclick="showView('mainView', this)">Home</button>
       <button class="nav-pill" onclick="showView('settingsView', this)">Settings</button>
       <button class="nav-pill" onclick="showView('historyView', this)">History</button>
@@ -54,7 +55,7 @@
     <div class="card p-3 mb-3">
       <h5>🎯 Daily Goal</h5>
       <input type="number" id="goalInput" class="form-control mb-2"  placeholder="Set daily goal (L)">
-      <button class="btn btn-primary w-100 onclick="setGoal()">Set Goal</button>
+      <button class="btn btn-primary w-100" onclick="setGoal()">Set Goal</button>
     </div>
 
       <div class="card p-3 mb-3">
@@ -68,6 +69,7 @@
     <div class="col-lg-4">
 
       <div class="card p-3 text-center progress-card">
+
         <h5>📊 Daily Hydration Progress</h5>
 
          <div class="circle-wrap">
@@ -123,7 +125,7 @@
 
       </div>
 
-    </div>
+    </div> 
   </div>
 
   <!-- ================= SETTINGS ================= -->
