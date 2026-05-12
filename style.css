@@ -312,6 +312,38 @@ input {
   margin-top: 20px;
 }
 
+@media (max-width: 576px) {
+  .app {
+    width: 100%;
+  }
+
+  .position-absolute.start-50 {
+    position: static !important;
+    transform: none !important;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar .container-fluid {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .body-container {
+    width: 180px;
+    height: 340px;
+  }
+
+  .human-shape {
+    width: 130px;
+    height: 300px;
+  }
+
+  #bodyWater {
+    width: 130px;
+  }
+}
 
 .card {
   background: rgb(255, 255, 255);
